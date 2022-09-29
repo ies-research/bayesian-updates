@@ -1,0 +1,7 @@
+name: deterministic
+
+# Training
+train_batch_size: 64
+lr: 0.01
+weight_decay: 3e-4
+momentum: 0.9

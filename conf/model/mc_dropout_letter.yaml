@@ -1,0 +1,11 @@
+name: mc_dropout
+draws: 1000
+dropout_rate: 0.5
+n_residual_layers: 2
+feature_dim: 128
+
+# Training
+train_batch_size: 16
+lr: 0.05
+weight_decay: 1e-3
+momentum: 0.9

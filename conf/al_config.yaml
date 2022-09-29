@@ -1,0 +1,23 @@
+random_seed: 42
+device: cuda
+val_size: 1000 # for debugging purposes
+
+dataset: MNIST
+defaults:
+  - model: sngp_mnist
+
+init_samples: 16
+addendum: 32
+cycle: 15
+subset: 1000 # subset for AL
+al_strat: 'LeastConfidenceReweighted'
+cold_start: True
+
+n_epochs: 200
+val_batch_size: 256
+reweight_batch_size: 32
+
+output_dir: './output'
+hydra:
+  run:
+    dir: ${output_dir}

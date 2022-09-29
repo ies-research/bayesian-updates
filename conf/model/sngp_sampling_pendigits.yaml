@@ -1,0 +1,18 @@
+name: sngp_sampling
+draws: 20000
+norm_bound: 1
+n_power_iterations: 1
+num_inducing: 1024 # need to be larger since we monte carlo sample ensembles
+kernel_scale: 8
+scale_random_features: True
+mean_field_factor: .39 # = pi / 8; google uses 20
+cov_momentum: -1
+ridge_penalty: 1
+n_residual_layers: 2
+feature_dim: 128
+
+# Training
+train_batch_size: 16
+lr: 0.05
+weight_decay: 1e-3
+momentum: 0.9

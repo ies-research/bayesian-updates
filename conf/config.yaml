@@ -1,0 +1,22 @@
+dataset: MNIST
+datasets_ood: ['FashionMNIST', "IMG_GAUSSIAN_NOISE"]
+val_size: 1000 # for debugging purposes
+random_seed: 42
+device: cuda
+
+defaults:
+  - model: sngp_mnist
+
+# Reweighting
+n_samples_start: 16
+n_samples_end: 320
+n_samples_added: [16, 32, 64]
+
+n_epochs: 200
+val_batch_size: 256
+reweight_batch_size: 32
+
+output_dir: './output'
+hydra:
+  run:
+    dir: ${output_dir}

@@ -1,0 +1,17 @@
+name: sngp
+lmb: 1
+draws: 1000
+norm_bound: 6
+n_power_iterations: 1
+num_inducing: 1024
+kernel_scale: 1
+scale_random_features: True
+mean_field_factor: .39
+cov_momentum: -1
+ridge_penalty: 1
+
+# Training
+train_batch_size: 16
+lr: 0.1
+weight_decay: 3e-4
+momentum: 0.9

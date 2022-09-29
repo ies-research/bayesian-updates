@@ -1,0 +1,9 @@
+name: mc_dropout
+draws: 1000
+dropout_rate: 0.2
+
+# Training
+train_batch_size: 16
+lr: 0.1
+weight_decay: 3e-3
+momentum: 0.9
